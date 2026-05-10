@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BikeDash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div id="game-container"></div>
+      <div id="hud">
+        <div class="panel panel--tl">
+          <div id="coins-line">Coins: 0</div>
+          <div id="delivery-line">Delivery: Idle</div>
+        </div>
+        <div class="panel panel--tr">
+          <div id="players-line">Players Online: 1</div>
+        </div>
+        <div class="panel panel--bl chat-panel">
+          <div class="chat-panel__title">Chat</div>
+          <div class="name-bar">
+            <input id="name-input" type="text" maxlength="20" placeholder="Display name" />
+            <button type="button" id="name-save">Save</button>
+          </div>
+          <div id="chat-log" class="chat-log"></div>
+          <form id="chat-form" class="chat-form" autocomplete="off">
+            <input id="chat-input" type="text" maxlength="200" placeholder="Message…" />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="panel panel--br version">BikeDash v0.1-alpha</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
